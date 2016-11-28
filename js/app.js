@@ -12,11 +12,22 @@ $(function() {
         limit: 8,
         sortBy: 'most-recent',
         resolution: 'standard_resolution',
-        template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="photo-box"><div class="image-wrap"><a target="_blank" href="{{link}}"><img src="{{image}}"></a><div class="likes">{{likes}} Likes</div></div><div class="description">{{caption}}<div class="date">{{model.date}}</div></div></div></div>'
+        template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="photo-box"><div class="image-wrap"><a target="_blank" href="{{link}}"><img src="{{image}}" class="img-responsive"></a><div class="likes">{{likes}} Likes</div></div><div class="description">{{caption}}<div class="date">{{model.date}}</div></div></div></div>'
     });
     feed.run();
  	
     var username = "hashtag";
     var hostname = "trashly.fish";
 	$('.contact-now-btn').attr('href', "mail" + "to:" + username + '@' + hostname + "?Subject=Hay%20gurl");
+	
+	// $.getJSON('https://api.twitch.tv/kraken/streams/dragtrashly', function(channel) {
+	//
+	//     if (channel["stream"] == null) {
+	//         window.alert("nie wow");
+	//
+	//     } else {
+	//         window.alert("wow");
+	//
+	//     }
+	// });
 });

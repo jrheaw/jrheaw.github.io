@@ -5916,8 +5916,18 @@ h2 {
   color: #bbbbbb; }
 .instagram-content .photo-box {
   margin: 0 0 30px 0; }
+  .instagram-content .photo-box .image-wrap a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%; }
   .instagram-content .photo-box .image-wrap img {
-    width: 100%; }
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
   .instagram-content .photo-box .image-wrap .likes {
     position: absolute;
     bottom: 5px;
@@ -5938,6 +5948,7 @@ h2 {
     white-space: nowrap;
     text-overflow: ellipsis; }
 
+/* item styles */
 footer {
   background: #FFF;
   padding: 30px 0;
