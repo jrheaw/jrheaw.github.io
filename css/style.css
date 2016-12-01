@@ -5824,14 +5824,14 @@ header {
   max-height: 600px;
   height: 600px;
   overflow: hidden; }
-  header img {
+  header img.background {
     position: fixed;
     top: 0px;
     left: 50%;
     margin-left: -600px;
     width: 1200px; }
     @media screen and (min-width: 1200px) {
-      header img {
+      header img.background {
         top: auto;
         left: auto;
         margin: 0;
@@ -5885,23 +5885,18 @@ h2 {
 .social {
   margin: auto; }
   .social a {
+    text-decoration: none; }
+  .social img {
     width: 26px;
     height: 26px;
     margin: 10px 5px 0 5px;
-    text-indent: -9999px;
-    background: url(../images/social-sprite.png) no-repeat;
     opacity: 0.8;
     display: inline-block; }
-    .social a:hover {
+    .social img:hover {
       opacity: 1.0; }
     @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (-min-device-pixel-ratio: 2) {
-      .social a {
-        background: url(../images/social-sprite@2x.png) no-repeat;
+      .social img {
         background-size: 53px 26px; } }
-    .social a.instagram {
-      background-position: 0px 0px; }
-    .social a.twitch {
-      background-position: -25px 0px; }
 
 .instagram-wrap {
   background: #eeeeee; }
