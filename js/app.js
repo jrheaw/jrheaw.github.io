@@ -3,7 +3,7 @@ $(function() {
     //Set up instafeed
     var feed = new Instafeed({
         clientId: '3c2c3b2d94a74bd68038371ebb78453f',
-		accessToken: '1858194.1677ed0.1f3a324844e44c37ad8641b01d9556b7',
+		accessToken: '1858194.1677ed0.c6336a6ac2e2466c8e16144d6041d2c6',
         target: 'instafeed',
         get: 'user',
 		userId: '1858194',
